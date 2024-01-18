@@ -90,14 +90,15 @@ def is_consecutive(a_list):
     sorted_list = sorted(a_list)
     return all((sorted_list[i] + 1) == sorted_list[i + 1] for i in range(len(sorted_list) - 1))
         
-numbers = [1, 2, 3, 4 ,5, 9]
-result = is_consecutive(numbers)
 
-if result:
-    print("Numbers Are Consecutive")
-else:
-    print("Numbers Aren't Consecutive")
+numbers1 = [2, 3, 4, 5, 6, 7]
+numbers2 = [1, 2, 4, 5]
 
+result1 = is_consecutive(numbers1)
+result2 = is_consecutive(numbers2)
+
+print(f"{numbers1}: {result1}")
+print(f"{numbers2}: {result2}")
 
 
 
